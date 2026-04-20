@@ -1,0 +1,5 @@
+alias,positional_encoding,num_heads,num_layers,d_model,d_ff,dropout,epochs,param_count,best_val_acc,test_acc,train_time_sec,train_time_human
+A,Yes,1,1,64,128,0.1,15,34050,0.905,0.88,5.86,0 min 5.9 s
+B,Yes,4,1,64,128,0.1,15,34050,0.989,0.973,8.54,0 min 8.5 s
+C,No,4,1,64,128,0.1,15,34050,0.814,0.823,8.54,0 min 8.5 s
+D,Yes,4,2,64,128,0.1,15,67522,0.987,0.98,15.89,0 min 15.9 s
