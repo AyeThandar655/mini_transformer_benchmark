@@ -17,10 +17,10 @@ The label is 1 if `seq[0]` occurs in `second_half`, otherwise 0.
 
 ## Restrictions (honoured in `model.py`)
 
-We may use `nn.Linear`, `nn.Embedding`, `nn.LayerNorm`, `nn.Dropout`, and
+I may use `nn.Linear`, `nn.Embedding`, `nn.LayerNorm`, `nn.Dropout`, and
 general PyTorch autograd/optimisation primitives.
 
-We may NOT use `nn.Transformer`, `nn.TransformerEncoder(Layer)`,
+I may NOT use `nn.Transformer`, `nn.TransformerEncoder(Layer)`,
 `nn.MultiheadAttention`, Hugging Face classes, or any pretrained model.
 Every attention / encoder block is implemented by hand.
 
@@ -34,7 +34,7 @@ mini_transformer_benchmark/
 ├── train.py               # single-run training loop
 ├── benchmark.py           # trains all 4 variants, writes tables + plots
 ├── utils.py               # seeding, timing, metric helpers
-├── report.pdf            # short report
+├── report.pdf             # short report
 ├── requirements.txt
 ├── data/
 │   ├── train.csv

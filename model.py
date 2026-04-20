@@ -1,11 +1,11 @@
 """Mini Transformer encoder implemented from scratch.
 
-Following the assignment brief we may use:
+Following the assignment brief I may use:
 
 * ``nn.Linear``, ``nn.Embedding``, ``nn.LayerNorm``, ``nn.Dropout``
 * general PyTorch tensor / autograd / optimisation primitives
 
-But we may NOT use:
+But I may NOT use:
 
 * ``nn.Transformer`` / ``nn.TransformerEncoder`` / ``nn.TransformerEncoderLayer``
 * ``nn.MultiheadAttention``
@@ -70,7 +70,7 @@ def scaled_dot_product_attention(
     scores = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(d_k)
 
     if mask is not None:
-        # Where mask == 0 we want -inf so softmax gives 0 probability.
+        # Where mask == 0 I want -inf so softmax gives 0 probability.
         scores = scores.masked_fill(mask == 0, float("-inf"))
 
     attn = F.softmax(scores, dim=-1)

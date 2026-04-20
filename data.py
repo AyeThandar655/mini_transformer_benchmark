@@ -20,7 +20,7 @@ The label-generation rule is documented in the assignment brief:
     Label = 1 if the first non-padding token of the sequence
     appears again in the second half of the non-padding portion.
 
-The CSV files already contain the label, so we simply read it.
+The CSV files already contain the label, so I simply read it.
 """
 from __future__ import annotations
 
