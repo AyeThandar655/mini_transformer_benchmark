@@ -110,6 +110,5 @@ deterministic cuDNN flags. All hyperparameters are listed above and in
 
 ## Academic integrity
 
-All model code is written by hand in `model.py`. No prebuilt Transformer
-modules are used. The training loop, benchmark harness, and report are
-original work for this assignment.
+All model code is written in `model.py`. No prebuilt Transformer
+modules are used.
