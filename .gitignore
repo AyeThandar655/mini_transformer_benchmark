@@ -11,8 +11,7 @@ venv/
 env/
 ENV/
 
-# Results
-data/
+# Train Results
 figures/
 results/
 
