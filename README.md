@@ -17,7 +17,7 @@ The label is 1 if `seq[0]` occurs in `second_half`, otherwise 0.
 
 ## Restrictions (honoured in `model.py`)
 
-I may use `nn.Linear`, `nn.Embedding`, `nn.LayerNorm`, `nn.Dropout`, and
+Used `nn.Linear`, `nn.Embedding`, `nn.LayerNorm`, `nn.Dropout`, and
 general PyTorch autograd/optimisation primitives.
 
 ## Project layout
