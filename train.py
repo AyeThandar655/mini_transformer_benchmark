@@ -1,4 +1,4 @@
-"""Training loop for the mini-Transformer classifier.
+"""Training loop for the Mini-Transformer classifier.
 
 The ``train_model`` function is written as a library function so it
 can also be called by ``benchmark.py`` to train many variants in a loop.

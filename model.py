@@ -69,7 +69,6 @@ def scaled_dot_product_attention(
 
     attn = F.softmax(scores, dim=-1)
 
-    # If a whole row is fully masked (shouldn't happen here but keeps us safe)
     # softmax of all -inf returns NaN -> replace with 0.
     attn = torch.nan_to_num(attn, nan=0.0)
 
