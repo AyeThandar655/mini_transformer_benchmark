@@ -49,8 +49,10 @@ mini_transformer_benchmark/
 ## Quick start
 
 ```bash
+python3 -m venv .venv            
+source .venv/bin/activate       
 pip install -r requirements.txt
-python benchmark.py
+python3 benchmark.py
 ```
 
 The benchmark runs end-to-end on CPU in well under a minute.
