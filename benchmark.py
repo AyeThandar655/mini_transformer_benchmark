@@ -36,7 +36,7 @@ FIGURES_DIR = ROOT / "figures"
 
 
 def build_configs() -> List[TrainConfig]:
-    """Return the four variants I will compare."""
+    """Return the four variants"""
     base = dict(
         d_model=64,
         d_ff=128,

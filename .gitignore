@@ -11,6 +11,11 @@ venv/
 env/
 ENV/
 
+# Results
+data/
+figures/
+results/
+
 # Jupyter
 .ipynb_checkpoints/
 

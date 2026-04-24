@@ -1,15 +1,9 @@
 """Mini Transformer encoder implemented from scratch.
 
-Following the assignment brief I may use:
+Following the assignment brief:
 
 * ``nn.Linear``, ``nn.Embedding``, ``nn.LayerNorm``, ``nn.Dropout``
 * general PyTorch tensor / autograd / optimisation primitives
-
-But I may NOT use:
-
-* ``nn.Transformer`` / ``nn.TransformerEncoder`` / ``nn.TransformerEncoderLayer``
-* ``nn.MultiheadAttention``
-* Hugging Face Transformer classes or pretrained models
 
 Every module below is written out explicitly so the maths is visible
 and verifiable rather than hidden behind a single high-level call.
@@ -30,7 +24,7 @@ from data import PAD_ID, VOCAB_SIZE, MAX_LEN
 # Positional encoding
 # ---------------------------------------------------------------------------
 class SinusoidalPositionalEncoding(nn.Module):
-    """Fixed sinusoidal positional encoding (Vaswani et al., 2017).
+    """Fixed sinusoidal positional encoding.
 
     Stored as a non-trainable buffer of shape ``[1, max_len, d_model]``.
     """

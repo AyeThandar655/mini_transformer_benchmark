@@ -20,10 +20,6 @@ The label is 1 if `seq[0]` occurs in `second_half`, otherwise 0.
 I may use `nn.Linear`, `nn.Embedding`, `nn.LayerNorm`, `nn.Dropout`, and
 general PyTorch autograd/optimisation primitives.
 
-I may NOT use `nn.Transformer`, `nn.TransformerEncoder(Layer)`,
-`nn.MultiheadAttention`, Hugging Face classes, or any pretrained model.
-Every attention / encoder block is implemented by hand.
-
 ## Project layout
 
 ```
